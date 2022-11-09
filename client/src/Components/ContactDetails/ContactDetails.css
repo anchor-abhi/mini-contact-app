@@ -1,0 +1,28 @@
+.contactDetails {
+  width: 30rem;
+  margin: 1rem auto;
+}
+.contactDetails > div {
+  border: 1px solid;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactDetails > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0.9rem;
+  width: 80%;
+}
+@media screen and (max-width: 500px) {
+  .contactDetails {
+    width: auto;
+    margin: 5px;
+  }
+}

@@ -1,0 +1,55 @@
+.home {
+  margin: 10px auto;
+  width: 35rem;
+}
+
+.contactList {
+  border-radius: 10px;
+  overflow: scroll;
+  margin: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  height: 500px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.contactListItem {
+  padding: 7px;
+  color: rgb(105, 105, 145);
+  width: 20rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin: 0.5rem auto;
+}
+
+.contactListItem :hover {
+  cursor: pointer;
+}
+
+.messageListItem {
+  padding: 10px;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: rgba(157, 188, 223, 0.3) 0px 0px 0px 3px;
+  margin: 0.5rem auto;
+}
+
+.messageListItem > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.messageListItem > div > h4 {
+  color: rgb(105, 105, 145);
+}
+@media screen and (max-width: 500px) {
+  .home {
+    width: auto;
+  }
+}
