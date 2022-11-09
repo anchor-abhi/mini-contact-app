@@ -20,8 +20,7 @@
   padding: 7px;
   color: rgb(105, 105, 145);
   width: 20rem;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(157, 188, 223, 0.3) 0px 0px 0px 3px;
   margin: 0.5rem auto;
 }
 
