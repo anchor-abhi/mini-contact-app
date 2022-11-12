@@ -1,6 +1,6 @@
 const express = require("express");
-const path = require("path");
 require("dotenv").config();
+const path = resquire("path");
 const connect = require("./configs/db");
 const messageController = require("./controllers/message.controller");
 const contactController = require("./controllers/contact.controller");
@@ -11,8 +11,10 @@ app.use(express.json());
 app.use("/message", messageController);
 app.use("/contact", contactController);
 
+//to serve the frontend
 app.use(express.static(path.join(__dirname, "./client/build")));
-app.get("*", function (_, res) {
+
+app.get("*", function (req, res) {
   res.sendFile(
     path.join(__dirname, "./client/build/index.html"),
     function (err) {
