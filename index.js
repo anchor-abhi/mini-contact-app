@@ -1,6 +1,6 @@
 const express = require("express");
 require("dotenv").config();
-const path = resquire("path");
+const path = require("path");
 const connect = require("./configs/db");
 const messageController = require("./controllers/message.controller");
 const contactController = require("./controllers/contact.controller");
